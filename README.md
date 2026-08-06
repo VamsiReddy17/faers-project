@@ -1,7 +1,13 @@
 # FAERS Pharmacovigilance Signal Mining Pipeline
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://faers-project.streamlit.app)
-[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+[![Python](https://img.shields.io/badge/Python-3.10+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
+[![openFDA](https://img.shields.io/badge/Data_Source-openFDA_API-005EA2?style=for-the-badge&logo=usgovernment&logoColor=white)](https://open.fda.gov/)
+[![DuckDB](https://img.shields.io/badge/Database-DuckDB-FFF000?style=for-the-badge&logo=duckdb&logoColor=black)](https://duckdb.org/)
+[![MotherDuck](https://img.shields.io/badge/Cloud_Warehouse-MotherDuck-FC4C02?style=for-the-badge)](https://motherduck.com/)
+[![Signal Mining](https://img.shields.io/badge/Analytics-ROR_%26_PRR-FF6F00?style=for-the-badge)](https://faers-project.streamlit.app)
+[![Signals Detected](https://img.shields.io/badge/Signals_Detected-19_Detected-brightgreen?style=for-the-badge)](https://faers-project.streamlit.app)
+[![Plotly](https://img.shields.io/badge/Visualization-Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)](https://plotly.com/)
 
 > 🌐 **Live Interactive Dashboard**: Explore the live pharmacovigilance web application at [**https://faers-project.streamlit.app**](https://faers-project.streamlit.app)
 

@@ -1,5 +1,10 @@
 # FAERS Pharmacovigilance Signal Mining Pipeline
 
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://faers-project.streamlit.app)
+[![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+
+> 🌐 **Live Interactive Dashboard**: Explore the live pharmacovigilance web application at [**https://faers-project.streamlit.app**](https://faers-project.streamlit.app)
+
 A configurable, end-to-end pipeline for mining safety signals from the FDA Adverse Event Reporting System (FAERS) using disproportionality analysis (ROR/PRR).
 
 ## Quick Start

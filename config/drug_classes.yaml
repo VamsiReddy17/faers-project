@@ -1,0 +1,138 @@
+# =============================================================================
+# FAERS Pharmacovigilance — Drug Class Configuration
+# =============================================================================
+# Edit this file to define your drug class, target adverse events, and
+# analysis parameters. The pipeline reads this config to pull data from
+# openFDA and run disproportionality analysis.
+# =============================================================================
+
+# ---- Analysis Metadata -----
+study_title: "Pharmacovigilance Signal Detection for Atypical Antipsychotics Using FAERS Data"
+study_period:
+  start: "20180101"
+  end: "20231231"
+
+# ---- Drug Class Definition -----
+drug_class:
+  name: "Atypical Antipsychotics"
+  description: "Second-generation antipsychotic medications used for schizophrenia, bipolar disorder, and other psychiatric conditions"
+
+  drugs:
+    - generic_name: "risperidone"
+      brand_names: ["risperdal", "risperdal consta"]
+
+    - generic_name: "olanzapine"
+      brand_names: ["zyprexa", "zyprexa zydis"]
+
+    - generic_name: "quetiapine"
+      brand_names: ["seroquel", "seroquel xr"]
+
+    - generic_name: "aripiprazole"
+      brand_names: ["abilify", "abilify maintena"]
+
+    - generic_name: "clozapine"
+      brand_names: ["clozaril", "fazaclo"]
+
+# ---- Target Adverse Events -----
+# Each event maps a clinically meaningful category to one or more
+# MedDRA Preferred Terms (PTs) that represent it in FAERS.
+adverse_events:
+
+  - name: "Weight Gain"
+    category: "Metabolic"
+    meddra_pts:
+      - "Weight increased"
+      - "Obesity"
+      - "Abnormal weight gain"
+
+  - name: "Somnolence"
+    category: "CNS"
+    meddra_pts:
+      - "Somnolence"
+      - "Sedation"
+      - "Hypersomnia"
+
+  - name: "Extrapyramidal Symptoms"
+    category: "Neurological"
+    meddra_pts:
+      - "Extrapyramidal disorder"
+      - "Tardive dyskinesia"
+      - "Dystonia"
+      - "Parkinsonism"
+      - "Tremor"
+
+  - name: "Akathisia"
+    category: "Neurological"
+    meddra_pts:
+      - "Akathisia"
+      - "Restlessness"
+
+  - name: "Diabetes Mellitus"
+    category: "Metabolic"
+    meddra_pts:
+      - "Diabetes mellitus"
+      - "Type 2 diabetes mellitus"
+      - "Hyperglycaemia"
+      - "Blood glucose increased"
+      - "Glycosylated haemoglobin increased"
+
+  - name: "QT Prolongation"
+    category: "Cardiac"
+    meddra_pts:
+      - "Electrocardiogram QT prolonged"
+      - "Long QT syndrome"
+      - "Torsade de pointes"
+
+  - name: "Dyslipidaemia"
+    category: "Metabolic"
+    meddra_pts:
+      - "Dyslipidaemia"
+      - "Hypercholesterolaemia"
+      - "Hypertriglyceridaemia"
+      - "Blood cholesterol increased"
+      - "Blood triglycerides increased"
+
+  - name: "Neuroleptic Malignant Syndrome"
+    category: "Neurological"
+    meddra_pts:
+      - "Neuroleptic malignant syndrome"
+
+  - name: "Agranulocytosis"
+    category: "Haematological"
+    meddra_pts:
+      - "Agranulocytosis"
+      - "Neutropenia"
+      - "Leukopenia"
+      - "White blood cell count decreased"
+
+  - name: "Seizures"
+    category: "CNS"
+    meddra_pts:
+      - "Seizure"
+      - "Convulsion"
+      - "Grand mal convulsion"
+      - "Epilepsy"
+
+# ---- Analysis Parameters -----
+analysis:
+  # Minimum report count to consider a drug-event pair
+  min_report_count: 3
+
+  # Signal detection thresholds
+  ror_signal_threshold: 1.0        # Lower 95% CI of ROR must exceed this
+  prr_signal_threshold: 2.0        # PRR must be >= this value
+  chi_squared_threshold: 4.0       # Chi-squared must be >= this value
+
+  # Include only primary suspect drugs (drugcharacterization = "1")
+  primary_suspect_only: true
+
+  # Seriousness filter: "all", "serious_only", "non_serious_only"
+  seriousness_filter: "all"
+
+# ---- openFDA API Settings -----
+api:
+  base_url: "https://api.fda.gov/drug/event.json"
+  # Set OPENFDA_API_KEY environment variable for higher rate limits
+  # api_key loaded from env var at runtime
+  max_results_per_query: 1000
+  rate_limit_delay_seconds: 0.3    # Delay between API calls (seconds)

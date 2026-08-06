@@ -1,0 +1,51 @@
+drug,event,event_category,a (drug+event),b (drug+no_event),c (no_drug+event),d (no_drug+no_event),ROR,ROR_lower_CI,ROR_upper_CI,PRR,Chi_squared,Signal_ROR,Signal_PRR,Signal
+clozapine,Agranulocytosis,Haematological,3700,20062,1404,76542,10.055,9.437,10.712,8.645,7244.084,True,True,True
+risperidone,Weight Gain,Metabolic,2418,19346,2668,77276,3.62,3.419,3.833,3.329,2175.591,True,True,True
+aripiprazole,Dyslipidaemia,Metabolic,167,12725,581,88235,1.993,1.676,2.37,1.98,63.405,True,False,True
+aripiprazole,Akathisia,Neurological,420,12472,1510,87306,1.947,1.745,2.173,1.916,146.736,True,False,True
+olanzapine,QT Prolongation,Cardiac,537,20970,1103,79098,1.836,1.655,2.038,1.815,134.47,True,False,True
+olanzapine,Neuroleptic Malignant Syndrome,Neurological,463,21044,995,79206,1.751,1.567,1.958,1.735,99.864,True,False,True
+aripiprazole,Diabetes Mellitus,Metabolic,369,12523,1597,87219,1.609,1.435,1.805,1.592,67.252,True,False,True
+olanzapine,Akathisia,Neurological,569,20938,1361,78840,1.574,1.426,1.738,1.559,81.987,True,False,True
+aripiprazole,Extrapyramidal Symptoms,Neurological,902,11990,4240,84576,1.501,1.393,1.617,1.466,115.867,True,False,True
+olanzapine,Somnolence,CNS,1489,20018,3906,76295,1.453,1.366,1.545,1.422,142.313,True,False,True
+olanzapine,Dyslipidaemia,Metabolic,205,21302,543,79658,1.412,1.201,1.659,1.408,17.713,True,False,True
+risperidone,Extrapyramidal Symptoms,Neurological,1396,20368,3746,76198,1.394,1.308,1.485,1.369,106.476,True,False,True
+olanzapine,Diabetes Mellitus,Metabolic,524,20983,1442,78759,1.364,1.233,1.509,1.355,36.466,True,False,True
+quetiapine,Seizures,CNS,505,21278,1386,78539,1.345,1.213,1.491,1.337,32.017,True,False,True
+olanzapine,Extrapyramidal Symptoms,Neurological,1321,20186,3821,76380,1.308,1.226,1.395,1.289,67.081,True,False,True
+risperidone,Somnolence,CNS,1295,20469,4100,75844,1.17,1.097,1.248,1.16,22.989,True,False,True
+aripiprazole,Weight Gain,Metabolic,728,12164,4358,84458,1.16,1.07,1.257,1.151,12.982,True,False,True
+olanzapine,Seizures,CNS,438,21069,1453,78748,1.127,1.011,1.255,1.124,4.699,True,False,True
+quetiapine,Somnolence,CNS,1220,20563,4175,75750,1.077,1.008,1.149,1.072,4.845,True,False,True
+risperidone,Neuroleptic Malignant Syndrome,Neurological,327,21437,1131,78813,1.063,0.939,1.203,1.062,0.932,False,False,False
+risperidone,Diabetes Mellitus,Metabolic,433,21331,1533,78411,1.038,0.932,1.156,1.038,0.467,False,False,False
+risperidone,Seizures,CNS,409,21355,1482,78462,1.014,0.908,1.133,1.014,0.061,False,False,False
+aripiprazole,Neuroleptic Malignant Syndrome,Neurological,185,12707,1273,87543,1.001,0.857,1.169,1.001,0.0,False,False,False
+aripiprazole,Somnolence,CNS,670,12222,4725,84091,0.976,0.898,1.06,0.977,0.339,False,False,False
+quetiapine,QT Prolongation,Cardiac,342,21441,1298,78627,0.966,0.857,1.089,0.967,0.315,False,False,False
+aripiprazole,Seizures,CNS,229,12663,1662,87154,0.948,0.825,1.09,0.949,0.557,False,False,False
+risperidone,Akathisia,Neurological,393,21371,1537,78407,0.938,0.839,1.049,0.939,1.255,False,False,False
+olanzapine,Weight Gain,Metabolic,1016,20491,4070,76131,0.927,0.864,0.995,0.931,4.391,False,False,False
+quetiapine,Dyslipidaemia,Metabolic,145,21638,603,79322,0.881,0.735,1.057,0.882,1.849,False,False,False
+risperidone,QT Prolongation,Cardiac,312,21452,1328,78616,0.861,0.76,0.975,0.863,5.586,False,False,False
+quetiapine,Neuroleptic Malignant Syndrome,Neurological,269,21514,1189,78736,0.828,0.725,0.946,0.83,7.738,False,False,False
+aripiprazole,QT Prolongation,Cardiac,176,12716,1464,87352,0.826,0.706,0.967,0.828,5.69,False,False,False
+quetiapine,Extrapyramidal Symptoms,Neurological,925,20858,4217,75708,0.796,0.74,0.856,0.805,37.816,False,False,False
+risperidone,Dyslipidaemia,Metabolic,132,21632,616,79328,0.786,0.651,0.949,0.787,6.305,False,False,False
+quetiapine,Akathisia,Neurological,327,21456,1603,78322,0.745,0.66,0.84,0.749,23.4,False,False,False
+quetiapine,Diabetes Mellitus,Metabolic,309,21474,1657,78268,0.68,0.601,0.768,0.684,38.701,False,False,False
+clozapine,Diabetes Mellitus,Metabolic,331,23431,1635,76311,0.659,0.585,0.743,0.664,47.697,False,False,False
+clozapine,QT Prolongation,Cardiac,273,23489,1367,76579,0.651,0.571,0.742,0.655,41.999,False,False,False
+clozapine,Seizures,CNS,310,23452,1581,76365,0.638,0.565,0.722,0.643,52.273,False,False,False
+olanzapine,Agranulocytosis,Haematological,716,20791,4388,75813,0.595,0.549,0.645,0.609,163.264,False,False,False
+clozapine,Neuroleptic Malignant Syndrome,Neurological,214,23548,1244,76702,0.56,0.484,0.648,0.564,62.321,False,False,False
+clozapine,Dyslipidaemia,Metabolic,99,23663,649,77297,0.498,0.403,0.616,0.5,43.168,False,False,False
+clozapine,Somnolence,CNS,721,23041,4674,73272,0.49,0.453,0.531,0.506,318.116,False,False,False
+quetiapine,Weight Gain,Metabolic,550,21233,4536,75389,0.43,0.394,0.471,0.445,357.634,False,False,False
+clozapine,Akathisia,Neurological,221,23541,1709,76237,0.419,0.364,0.482,0.424,155.917,False,False,False
+clozapine,Extrapyramidal Symptoms,Neurological,598,23164,4544,73402,0.417,0.383,0.455,0.432,416.421,False,False,False
+clozapine,Weight Gain,Metabolic,374,23388,4712,73234,0.248,0.224,0.276,0.26,766.375,False,False,False
+aripiprazole,Agranulocytosis,Haematological,176,12716,4928,83888,0.236,0.203,0.274,0.246,413.344,False,False,False
+quetiapine,Agranulocytosis,Haematological,264,21519,4840,75085,0.19,0.168,0.216,0.2,842.574,False,False,False
+risperidone,Agranulocytosis,Haematological,248,21516,4856,75088,0.178,0.157,0.203,0.188,873.987,False,False,False

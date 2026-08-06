@@ -1,0 +1,21 @@
+# Environment variables / Credentials
+.env
+*.env
+
+# Python / Virtual Environment
+venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Data & Database Files
+data/raw/*.json
+data/faers.duckdb
+data/faers.duckdb.wal
+
+# Logs & PIDs
+*.log
+.streamlit_pid
+
+# OS Files
+.DS_Store

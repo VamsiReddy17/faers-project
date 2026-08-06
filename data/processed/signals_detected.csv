@@ -1,0 +1,20 @@
+drug,event,event_category,a (drug+event),b (drug+no_event),c (no_drug+event),d (no_drug+no_event),ROR,ROR_lower_CI,ROR_upper_CI,PRR,Chi_squared,Signal_ROR,Signal_PRR,Signal
+clozapine,Agranulocytosis,Haematological,3700,20062,1404,76542,10.055,9.437,10.712,8.645,7244.084,True,True,True
+risperidone,Weight Gain,Metabolic,2418,19346,2668,77276,3.62,3.419,3.833,3.329,2175.591,True,True,True
+aripiprazole,Dyslipidaemia,Metabolic,167,12725,581,88235,1.993,1.676,2.37,1.98,63.405,True,False,True
+aripiprazole,Akathisia,Neurological,420,12472,1510,87306,1.947,1.745,2.173,1.916,146.736,True,False,True
+olanzapine,QT Prolongation,Cardiac,537,20970,1103,79098,1.836,1.655,2.038,1.815,134.47,True,False,True
+olanzapine,Neuroleptic Malignant Syndrome,Neurological,463,21044,995,79206,1.751,1.567,1.958,1.735,99.864,True,False,True
+aripiprazole,Diabetes Mellitus,Metabolic,369,12523,1597,87219,1.609,1.435,1.805,1.592,67.252,True,False,True
+olanzapine,Akathisia,Neurological,569,20938,1361,78840,1.574,1.426,1.738,1.559,81.987,True,False,True
+aripiprazole,Extrapyramidal Symptoms,Neurological,902,11990,4240,84576,1.501,1.393,1.617,1.466,115.867,True,False,True
+olanzapine,Somnolence,CNS,1489,20018,3906,76295,1.453,1.366,1.545,1.422,142.313,True,False,True
+olanzapine,Dyslipidaemia,Metabolic,205,21302,543,79658,1.412,1.201,1.659,1.408,17.713,True,False,True
+risperidone,Extrapyramidal Symptoms,Neurological,1396,20368,3746,76198,1.394,1.308,1.485,1.369,106.476,True,False,True
+olanzapine,Diabetes Mellitus,Metabolic,524,20983,1442,78759,1.364,1.233,1.509,1.355,36.466,True,False,True
+quetiapine,Seizures,CNS,505,21278,1386,78539,1.345,1.213,1.491,1.337,32.017,True,False,True
+olanzapine,Extrapyramidal Symptoms,Neurological,1321,20186,3821,76380,1.308,1.226,1.395,1.289,67.081,True,False,True
+risperidone,Somnolence,CNS,1295,20469,4100,75844,1.17,1.097,1.248,1.16,22.989,True,False,True
+aripiprazole,Weight Gain,Metabolic,728,12164,4358,84458,1.16,1.07,1.257,1.151,12.982,True,False,True
+olanzapine,Seizures,CNS,438,21069,1453,78748,1.127,1.011,1.255,1.124,4.699,True,False,True
+quetiapine,Somnolence,CNS,1220,20563,4175,75750,1.077,1.008,1.149,1.072,4.845,True,False,True
